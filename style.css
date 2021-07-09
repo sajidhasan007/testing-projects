@@ -1,0 +1,99 @@
+
+
+table,th,td{
+
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 20px;
+	margin: 10px
+}
+
+#second1{
+
+	background-image: url("home.jpg");
+	max-width: 1000px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+#second{
+
+	background-image: url("home1.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#third{
+
+	background-color: rgb(37,238,30,0.2);
+	background-attachment: scroll;
+
+}
+#fourth{
+
+	background-color: rgb(100,250,50,0.4);
+	background-attachment: scroll;
+
+}
+
+.header #no{
+color: red;
+}
+
+.header .first{
+color: blue;
+}
+
+.button{
+
+	color: white;
+	background-color: red;
+	border: none;
+	padding: 15px 32px;
+	text-decoration: bold;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 12px; 
+}
+
+.button:hover {
+background-color: transparent;
+color: white;
+}
+
+.button:visited{
+	background-color: green;
+	
+}
+.button:checked{
+	background-color: green;
+	
+}
+.head{
+	padding: 25px;
+	background-color: gray;
+	position: sticky;
+	top:0px;
+}
+
+.float{
+	border:3px solid black;
+	margin: 10px 10px;
+	border-collapse: collapse;
+	overflow:auto;
+
+	
+}
+.float img{
+	float: left;
+}
+
+.for-test{
+	background-color: darkred;
+	height: 100px;
+	width: 60%;
+	margin-left: 30%;
+}

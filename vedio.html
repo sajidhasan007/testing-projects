@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>vedio</title>
+</head>
+<body>
+<div style="text-align:center"> 
+	<button onclick="playPause()">play/pause</button>
+	<button onclick="big()">big</button>
+	<button onclick="small()">small</button>
+<video  width="320" height="240">
+	<source src="vedio.mp4"  type="video/mp4">
+   
+</video>
+<br>
+
+
+
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+<br>
+
+
+<audio  id="video1" width="320" height="240" controls>
+	<source src="Confusion.mp3"  >
+  
+</audio>
+
+</div>
+
+<script type="text/javascript">
+	
+
+	var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function big(){
+	myVideo.width = 1000; 
+}
+function small(){
+	myVideo.width = 200; 
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c898b4ee0c.js" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            margin-left: 200px;
+            border: 2px solid skyblue;
+
+        }
+
+        .inner {
+            height: 150px;
+            width: 150px;
+            border: 2px solid skyblue;
+            background-color: red;
+            transform: rotate(30deg) scale(0.55) translate(100px);
+
+        }
+
+        .fab {
+            font-size: 100px;
+            transition: font-size 1s, transform 1s;
+            color: blue;
+
+        }
+
+        .fab:hover {
+            font-size: 120px;
+            transform: rotate(360deg);
+
+        }
+
+        .field {
+            border: 1px solid;
+            height: 350px;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            /* transform-origin: right top; */
+
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box containter">
+        <div class="inner">
+            <p>box-1</p>
+        </div>
+    </div>
+    <div class="box containter">
+        <div class="inner">
+            <p>box-2</p>
+        </div>
+    </div>
+    <div class="box containter">
+        <div class="inner">
+            <p>box-3</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="n-box">
+
+        <a href="https://www.facebook.com/sajidhasan1997"><i class="fab fa-facebook"></i></a>
+
+    </div>
+    <hr>
+    <br><br>
+
+
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>

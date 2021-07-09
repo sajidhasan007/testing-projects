@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            border: 1px solid;
+
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+
+        }
+
+
+        .field:hover .ball {
+            transform: translate(1200px);
+
+        }
+
+        .bat {
+            transition: transform 1s ease-in;
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 25px;
+            transform: translate(510px);
+            transition: transform 2s;
+            transition: transform 1s ease-in 1s;
+        }
+
+        @keyframes slider {
+
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+
+            }
+
+            50% {
+                background-color: yellow;
+                top: 300px;
+            }
+
+            100% {
+                background-color: red;
+                left: 400px;
+                top: 0;
+            }
+        }
+
+        .contain {
+            height: 500px;
+            width: 500px;
+            background-color: cadetblue;
+        }
+
+        .item {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            animation: slider 2s ease-in-out 1s infinite alternate;
+            animation-play-state: running;
+
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br>
+
+    <div class="field">
+        <img class="bat" src="images/bat (1).png" alt="">
+        <div class="ball"></div>
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="contain">
+        <div class="item">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
